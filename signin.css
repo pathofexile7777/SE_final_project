@@ -1,0 +1,67 @@
+.nav{
+  height: 70px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+.nav-right-items{
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-item{
+  margin-left: 10px;
+}
+.top_page{
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+.wrapper{
+    padding-top: 50px;
+    padding-left: 300px;
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.contents {
+  display: flex;
+}
+
+.loginSec{
+  width: 550px;
+  height: 350px;
+
+}
+
+.loginSec .id {
+  position: relative;
+  width: auto;
+}
+.id .input01 {
+  margin-top: 10px;
+  width: 500px;
+  height: 30px;
+}
+.pass .input01 {
+  margin-top: 10px;
+  width: 500px;
+  height: 30px;
+}
+.saveid {
+  margin-top: 10px;
+}
+.btLogin .button01 {
+  margin-top: 15px;
+  width: 500px;
+  height: 30px;
+  color: #fff;
+  font-size:18px;
+  border: 1px solid #4160b8;
+  background-color:  #486bcd;
+}
+
+.logmenu {
+  font-size: 12px
+}

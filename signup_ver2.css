@@ -1,0 +1,36 @@
+.top_page{
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.nav{
+  height: 70px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+.nav-right-items{
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-item{
+  margin-left: 10px;
+}
+
+.title{
+  text-align: center;
+  font-size: 35px;
+}
+
+.info_detail {
+  padding-top: 50px;
+  margin: 0 auto
+}
+
+.field {
+  width: 700px;
+  position: relative;
+  margin: 0 auto;
+}

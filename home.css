@@ -1,0 +1,112 @@
+.nav{
+  height: 70px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+.nav2{
+  height: 70px;
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid black;
+
+}
+
+.nav-right-items{
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-item{
+  margin-left: 10px;
+}
+
+.tab-item{
+  margin-left: 10px;
+}
+.tabar{
+  text-align: center;
+}
+
+.title{
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.subtitle{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.prices{
+  display: flex;
+}
+
+.price-item{
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+}
+.main{
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
+
+}
+.best-item{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 200;
+}
+.New-item{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 200;
+  margin-top: 110px;
+}
+.prices2{
+  display: flex;
+}
+.price-item2{
+  margin-top: 0px;
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+}
+button {
+  background:none;
+  border:0;
+  outline:0;
+  cursor:pointer;
+}
+.tab_menu_container {
+  display:flex;
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
+}
+.tab_menu_btn {
+  width:80px;
+  height:40px;
+  transition:0.3s all;
+}
+.tab_menu_btn.on {
+  border-bottom:2px solid #df0000;
+  font-weight:700;
+  color:#df0000;
+}
+.tab_menu_btn:hover {
+  color:#df0000;
+}
+.tab_box {
+  display:none;
+  padding:20px;
+}
+.tab_box.on {
+  display:block;
+}

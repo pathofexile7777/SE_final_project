@@ -1,0 +1,78 @@
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="signup_ver2.css">
+    <title>Sign in</title>
+  </head>
+  <body>
+
+    <div class="top_page">
+      <img src="img/hn.PNG" width="150px" height="150px"/>
+    </div>
+
+    <div class="nav">
+      <div class="nav-right-items">
+        <div class="nav-item">로그인</div>
+        <div class="nav-item">회원가입</div>
+        <div class="nav-item">장바구니</div>
+        <div class="nav-item">내 정보</div>
+        <div class="nav-item">고객지원</div>
+      </div>
+    </div>
+
+    <div class="title">
+      회원가입
+    </div>
+
+    <form class="info_detail" action="index.html" method="post">
+      <fieldset class="field">
+        <legend>입력사항</legend>
+        <table>
+          <tr class="reg" height = "30">
+            <td>아이디</td>
+            <td><input type="text" size="35" name="userid" placeholder="아이디"></td>
+          </tr>
+          <tr class="reg" height = "30">
+            <td>비밀번호</td>
+            <td><input type="password" size="35" name="userpw" placeholder="비밀번호"></td>
+          </tr>
+          <tr class="reg" height = "30">
+            <td>이름</td>
+            <td><input type="text" size="35" name="name" placeholder="이름"></td>
+          </tr>
+          <tr class="reg" height = "30">
+            <td>휴대폰 번호</td>
+            <td><input type="text" size="35" name="phone" placeholder="전화번호"></td>
+          </tr>
+
+            <tr class="reg" height = "30">
+            <td>이메일</td>
+            <td><input type="text" size="35" name="email">@<select name="emadress"><option value="naver.com">naver.com</option><option value="gmail.com">gmail.com</option></td>
+          </tr>
+
+          <tr height="20">
+            <td colspan="3"><hr /></td>
+
+          </tr>
+
+          <tr class="reg" height = "30">
+            <td>주소</td>
+            <td>
+              <input type="text" size="35" name="wPostCode" placeholder="우편번호" readonly="readonly" height = "30">
+              <input type="button" value="우편번호 찾기"><br><br />
+              <input type="text" size="35" name="wRoadAddress" id="roadAddress" placeholder="도로명주소">
+              <input type="text" size="35" name="wJibunAddress" id="jibunAddress" placeholder="지번주소>"
+              <br /><span id="guid" style="color:#999font-size:10px"></span>
+              <br /><br /><input type="text" name="wRestAddress" placeholder="나머지 주소" size="50">
+
+            </td>
+            </tr>
+        </table>
+
+        <input type="submit" value="가입하기" />
+
+
+      </fieldset>
+    </form>
+  </body>
+</html>
