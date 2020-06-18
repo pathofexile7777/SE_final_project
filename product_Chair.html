@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="Hurniture.png" rel="shortcut icon" type="image/x-icon">
+    <title>Hurniture</title>
+    <style>
+      #test_btn1{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+      #test_btn2{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      #btn_group{
+        padding: 30px;
+        width: auto;
+        display: flex;
+        margin: 0px auto;
+        justify-content: center;
+      }
+      #btn_group button{
+        border: 1px solid gold;
+        background-color: rgba(0,0,0,0);
+        color: gold;
+        padding: 5px;
+        width:120px;
+        height:50px;
+      }
+      #btn_group button:hover{
+        color:silver;
+        background-color: gold;
+      }
+      #product{
+        display: inline;
+      }
+      #product items{
+        width:230px; height:230px;
+      }
+      #product items:hover{
+
+      }
+      .nav{
+        float:right;
+      }
+      .logo{
+        width: auto;
+        display: flex;
+        margin: 0px auto;
+        margin-left: 10%;
+        justify-content: center;
+
+      }
+      #slideshow {
+        margin: 0px auto;
+        position: relative;
+        height: 500px;
+        padding: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      }
+      #slideshow > div {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+      }
+
+      /* hover */
+      @import url(https://fonts.googleapis.com/css?family=Raleway:300,700);
+      @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+      figure.snip1384 {
+        font-family: 'Raleway', Arial, sans-serif;
+        position: relative;
+        overflow: hidden;
+        margin: 10px;
+        min-width: 230px;
+        max-width: 315px;
+        width: 100%;
+        color: #ffffff;
+        text-align: left;
+        font-size: 16px;
+        background-color: #000000;
+      }
+      figure.snip1384 * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.35s ease;
+        transition: all 0.35s ease;
+      }
+      figure.snip1384 img {
+        max-width: 100%;
+        backface-visibility: hidden;
+        vertical-align: top;
+      }
+      figure.snip1384:after,
+      figure.snip1384 figcaption {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      figure.snip1384:after {
+        content: '';
+        background-color: rgba(0, 0, 0, 0.65);
+        -webkit-transition: all 0.35s ease;
+        transition: all 0.35s ease;
+        opacity: 0;
+      }
+      figure.snip1384 figcaption {
+        z-index: 1;
+        padding: 40px;
+      }
+      figure.snip1384 h3,
+      figure.snip1384 .links {
+        width: 100%;
+        margin: 5px 0;
+        padding: 0;
+      }
+      figure.snip1384 h3 {
+        line-height: 1.1em;
+        font-weight: 700;
+        font-size: 1.4em;
+        text-transform: uppercase;
+        opacity: 0;
+      }
+      figure.snip1384 p {
+        font-size: 0.8em;
+        font-weight: 300;
+        letter-spacing: 1px;
+        opacity: 0;
+        top: 50%;
+        -webkit-transform: translateY(40px);
+        transform: translateY(40px);
+      }
+      figure.snip1384 i {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        padding: 20px 25px;
+        font-size: 34px;
+        opacity: 0;
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+      }
+      figure.snip1384 a {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+      }
+      figure.snip1384:hover img,
+      figure.snip1384.hover img {
+        zoom: 1;
+        filter: alpha(opacity=50);
+        -webkit-opacity: 0.5;
+        opacity: 0.5;
+      }
+      figure.snip1384:hover:after,
+      figure.snip1384.hover:after {
+        opacity: 1;
+        position: absolute;
+        top: 10px;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+      }
+      figure.snip1384:hover h3,
+      figure.snip1384.hover h3,
+      figure.snip1384:hover p,
+      figure.snip1384.hover p,
+      figure.snip1384:hover i,
+      figure.snip1384.hover i {
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+        opacity: 1;
+      }
+      table {
+        width:73%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align:center;
+        border: 10px;
+      }
+      td{
+        width: auto;
+        height: auto;
+      }
+
+      a:link{text-decoration:none;}
+      a:visited{text-decoration:none;}
+      a:active{text-decoration:none;}
+    </style>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() {
+      $('#slideshow > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow');
+      }, 3000);
+    </script>
+
+    <script type="text/javascript">
+      $(".hover").mouseleave(
+        function () {
+          $(this).removeClass("hover");
+        }
+      );
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="nav">
+        <a><img src="like.png" alt="찜" style="width:30px; height:30px; margin:10px;"></a>
+        <a><img src="cart.png" alt="장바구니" style="width:30px; height:30px; margin:10px;"></a>
+        <a><img src="user.png" alt="로그인/마이페이지" style="width:30px; height:30px; margin:10px;"></a>
+      </div>
+    </div>
+
+    <div class="logo">
+      <a href="practice.html">
+        <img src="Hurniture.png" alt="logo" width= "100px" height="100px" top="54px">
+      </a>
+    </div>
+
+    <div id="btn_group">
+      <button id="test_btn1"><a href="product_New.html">New</a></button>
+      <button><a href="product_BEST.html">BEST</a></button>
+      <button><a href="product_Bed.html">침대</a></button>
+      <button><a href="product_Table.html">테이블</a></button>
+      <button><a href="product_Chair.html">의자</a></button>
+      <button><a href="product_Diy.html">수납장</a></button>
+      <button><a href="product_Light.html">조명</a></button>
+      <button><a href="product_Sale.html">세일</a></button>
+      <button id="test_btn2"><a href="product_Event.html">기획전</a></button>
+    </div>
+
+
+
+    <!-- Best Products  -->
+    <div id="product">
+      <div style="margin-left: auto; text-align: center">
+        <table>
+          <!-- sorting option -->
+          <select name='sorting_select' style="margin-left: 67%;">
+            <option value='' selected>-- 선택 --</option>
+            <option value='new'>신상품순</option>
+            <option value='rating'>평점순</option>
+            <option value='sold'>판매량순</option>
+            <option value='high_price'>높은 가격순</option>
+            <option value='low_price'>낮은 가격순</option>
+          </select>
+          <tr>
+            <td>
+              <figure class="snip1384">
+                <img src="best1.jpg" alt="Best product 1" />
+                <figcaption>
+                  <h3>BEST1</h3>
+                  <p>This is the Best product.</p>
+                  <i class="ion-ios-arrow-right"></i>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </td>
+            <td>
+              <figure class="snip1384">
+                <img src="best2.jpg" alt="Best product 2" />
+                <figcaption>
+                  <h3>BEST2</h3>
+                  <p>This is the Best product.</p>
+                  <i class="ion-ios-arrow-right"></i>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </td>
+            <td>
+              <figure class="snip1384">
+                <img src="best3.jpg" alt="Best product 3" />
+                <figcaption>
+                  <h3>BEST3</h3>
+                  <p>This is the Best product.</p>
+                  <i class="ion-ios-arrow-right"></i>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </td>
+            <td>
+              <figure class="snip1384">
+                <img src="best4.jpg" alt="Best product 4" />
+                <figcaption>
+                  <h3>BEST4</h3>
+                  <p>This is the Best product.</p>
+                  <i class="ion-ios-arrow-right"></i>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <figure class="snip1384">
+                <img src="best1.jpg" alt="Best product 1" />
+                <figcaption>
+                  <h3>BEST1</h3>
+                  <p>This is the Best product.</p>
+                  <i class="ion-ios-arrow-right"></i>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </td>
+            <td>
+              <figure class="snip1384">
+                <img src="best2.jpg" alt="Best product 2" />
+                <figcaption>
+                  <h3>BEST2</h3>
+                  <p>This is the Best product.</p>
+                  <i class="ion-ios-arrow-right"></i>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </td>
+            <td>
+              <figure class="snip1384">
+                <img src="best3.jpg" alt="Best product 3" />
+                <figcaption>
+                  <h3>BEST3</h3>
+                  <p>This is the Best product.</p>
+                  <i class="ion-ios-arrow-right"></i>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </td>
+            <td>
+              <figure class="snip1384">
+                <img src="best4.jpg" alt="Best product 4" />
+                <figcaption>
+                  <h3>BEST4</h3>
+                  <p>This is the Best product.</p>
+                  <i class="ion-ios-arrow-right"></i>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <figure class="snip1384">
+                <img src="best1.jpg" alt="Best product 1" />
+                <figcaption>
+                  <h3>BEST1</h3>
+                  <p>This is the Best product.</p>
+                  <i class="ion-ios-arrow-right"></i>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </td>
+            <td>
+              <figure class="snip1384">
+                <img src="best2.jpg" alt="Best product 2" />
+                <figcaption>
+                  <h3>BEST2</h3>
+                  <p>This is the Best product.</p>
+                  <i class="ion-ios-arrow-right"></i>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </td>
+            <td>
+              <figure class="snip1384">
+                <img src="best3.jpg" alt="Best product 3" />
+                <figcaption>
+                  <h3>BEST3</h3>
+                  <p>This is the Best product.</p>
+                  <i class="ion-ios-arrow-right"></i>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </td>
+            <td>
+              <figure class="snip1384">
+                <img src="best4.jpg" alt="Best product 4" />
+                <figcaption>
+                  <h3>BEST4</h3>
+                  <p>This is the Best product.</p>
+                  <i class="ion-ios-arrow-right"></i>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <figure class="snip1384">
+                <img src="best1.jpg" alt="Best product 1" />
+                <figcaption>
+                  <h3>BEST1</h3>
+                  <p>This is the Best product.</p>
+                  <i class="ion-ios-arrow-right"></i>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </td>
+            <td>
+              <figure class="snip1384">
+                <img src="best2.jpg" alt="Best product 2" />
+                <figcaption>
+                  <h3>BEST2</h3>
+                  <p>This is the Best product.</p>
+                  <i class="ion-ios-arrow-right"></i>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </td>
+            <td>
+              <figure class="snip1384">
+                <img src="best3.jpg" alt="Best product 3" />
+                <figcaption>
+                  <h3>BEST3</h3>
+                  <p>This is the Best product.</p>
+                  <i class="ion-ios-arrow-right"></i>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </td>
+            <td>
+              <figure class="snip1384">
+                <img src="best4.jpg" alt="Best product 4" />
+                <figcaption>
+                  <h3>BEST4</h3>
+                  <p>This is the Best product.</p>
+                  <i class="ion-ios-arrow-right"></i>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <figure class="snip1384">
+                <img src="best1.jpg" alt="Best product 1" />
+                <figcaption>
+                  <h3>BEST1</h3>
+                  <p>This is the Best product.</p>
+                  <i class="ion-ios-arrow-right"></i>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </td>
+            <td>
+              <figure class="snip1384">
+                <img src="best2.jpg" alt="Best product 2" />
+                <figcaption>
+                  <h3>BEST2</h3>
+                  <p>This is the Best product.</p>
+                  <i class="ion-ios-arrow-right"></i>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </td>
+            <td>
+              <figure class="snip1384">
+                <img src="best3.jpg" alt="Best product 3" />
+                <figcaption>
+                  <h3>BEST3</h3>
+                  <p>This is the Best product.</p>
+                  <i class="ion-ios-arrow-right"></i>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </td>
+            <td>
+              <figure class="snip1384">
+                <img src="best4.jpg" alt="Best product 4" />
+                <figcaption>
+                  <h3>BEST4</h3>
+                  <p>This is the Best product.</p>
+                  <i class="ion-ios-arrow-right"></i>
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <br><br>
+
+    <!-- The contents of under pages -->
+    <div style="border-top: 2px solid silver;">
+      <div style="margin-top: 10px; margin-left:15px; font-size:12px; float:left;">
+        <p>COPYRIGHTⓒHurniture By SE-Team (LIMCHIHUN_KIMDONGHUN_LEESANGJAE)</p>
+        <div style="margin-top: 10px; font-size:12px; float:left">
+          <p>
+            <img src="Hurniture.png" width="12px" height="12px">
+            <strong>Hurniture korea</strong><br>
+            주소 : 서울시 노원구 광운로 20 (월계동 447-1) 광운대학교(01897)<br>
+            사업자 등록번호 : 2014-722-xxx 사업자정보확인<br>
+            대표자(공동): 임치헌, 김동훈, 이상재<br>
+            통신판매업 신고: 2020-서울동북-2014<br>
+            TEL: 2014-7220<br>
+          </p>
+        </div>
+      </div>
+      <div style="margin-top: 25px; margin-right: 15px; font-size:12px; float:right;">
+        <a href="#">개인정보처리방침</a>
+        <a href="#">웹사이트 이용약관</a>
+      </div>
+    </div>
+  </body>
+</html>
