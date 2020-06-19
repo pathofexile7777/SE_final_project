@@ -83,6 +83,8 @@ router.post('/products/write',adminRequired, upload.single('thumbnail'),csrfProt
     var product = new ProductsModel({
         name: req.body.name,
         thumbnail: (req.file) ? req.file.filename : "",//thumbnail 필드명을 DB에 저장/(조건)?결과:아니면
+        type: req.body.type, 
+        color: req.body.color, 
         price: req.body.price,
         description: req.body.description,
         username : req.user.username,

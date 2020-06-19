@@ -11,6 +11,8 @@ var ProductsSchema = new Schema({
     thumbnail : String, //이미지 파일명
     price: Number, //가격
     description: String, //설명
+    color: String, // 제품 색상
+    type: String,  // 제품 종류
     created_at: { //작성일
         type: Date,
         default: Date.now()
@@ -18,9 +20,9 @@ var ProductsSchema = new Schema({
     username: String//작성자 추가
 });
 
-//virtual 변수는 호출되면 실행하는 함수
+// virtual 변수는 호출되면 실행하는 함수
 // Object create 의 get과 set과 비슷함
-//set은 변수의 값을 바꾸거나 셋팅하면 호출
+// set은 변수의 값을 바꾸거나 셋팅하면 호출
 // get은 getDate변수를 호출하는 순간 날짜 월일이 찍힌다.
 ProductsSchema.virtual('getDate').get(function () {
     var date = new Date(this.created_at);//this사용

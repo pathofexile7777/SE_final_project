@@ -23,7 +23,7 @@ var CheckoutSchema = new Schema({
 
     created_at: {
         type: Date,
-        default: Date.now()
+        default: Date.now()         // 별일 없으면 현재시각이 할당됨
     }
 });
 //virtual변수

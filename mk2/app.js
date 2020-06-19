@@ -22,10 +22,10 @@ var autoIncrement = require('mongoose-auto-increment');//key value 생성을 위
 var db = mongoose.connection;
 db.on('error', console.error);
 db.once('open', function () {
-    console.log('mongodb connect');//접속 성공됬는지 확인하기 위해
+    console.log('mongodb connect'); // 접속 성공 여부
 });
 
-var connect = mongoose.connect('mongodb://127.0.0.1:27017/fastcampus', { useMongoClient: true });
+var connect = mongoose.connect('mongodb://127.0.0.1:27017/Hurniture', { useMongoClient: true });
 autoIncrement.initialize(connect);
 
 //라우터 작성
